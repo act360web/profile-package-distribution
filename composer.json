@@ -1,5 +1,5 @@
 {
-	"name": "act360web/profile-package-distribution",
+	"name": "act360web/act_profile",
 	"description": "ACT360 Profile Package Installation",
 	"type": "drupal-profile",
 	"license": "GPL-2.0-or-later",
