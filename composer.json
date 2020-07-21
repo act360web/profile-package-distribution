@@ -1,0 +1,33 @@
+{
+	"name": "act360web/profile-package-distribution",
+	"description": "ACT360 Profile Package Installation",
+	"type": "drupal-profile",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "adan@act360.ca",
+			"role": ""
+		}
+	],
+    "repositories": [
+	    {
+	        "type": "composer",
+	        "url":  "https://packages.drupal.org/8"
+	    }
+	],
+    "require": {
+        "drupal/radix": "^4.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "web/core": 					["type:drupal-core"],
+            "web/libraries/{$name}": 		["type:drupal-library"],
+            "web/modules/contrib/{$name}": 	["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": 	["type:drupal-theme"],
+            "drush/Commands/{$name}": 		["type:drupal-drush"]
+        }
+    }
+}
